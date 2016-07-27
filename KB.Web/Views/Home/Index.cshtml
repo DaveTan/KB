@@ -1,0 +1,264 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<nav class="navbar navbar-default" style="position:fixed;width:100%;z-index:20;color:white">
+    <div class="container-fluid navbar-custom">
+        <div id="sideNavContainer">
+            <div class="navbar-header" style="margin-top:-15px">
+                <a class="navbar-brand" href="Index"><img src="~/logo2.png" style="width:75px;height:75px"></a>
+            </div>
+            <ul class="nav navbar-nav navbar-custom" style="font-size:150%">
+                <li>
+                    <a href="Index"><strong>Knowledge Base Repository</strong></a>
+                </li>
+            </ul>
+        </div>
+        <div id="NavMidContainer">
+            <div id="containerMid2">
+                <ul class="nav navbar-nav navbar-custom" style="font-size:120%">
+                    @if (Convert.ToInt32(Session["Role"]) == 19)
+                    {
+                        ViewBag.Temp = @"
+                         <li>
+                        <a href='Index' role='button'>Home</a>
+                    </li>
+                    <li class='dropdown'>
+                        <a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>File<span class='caret'></span></a>
+                        <ul class='dropdown-menu'>
+                            <li><a href='#' data-toggle='modal' data-target='#myModal'>Add</a></li>
+                            <li><a href='#' data-toggle='modal' data-target='#myModal2'>Edit</a></li>
+                            <li><a href='/KB/Home/Delete/'>Delete</a></li>
+                        </ul>
+                    </li>
+                    <li class='dropdown'>
+                        <a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>Admin<span class='caret'></span></a>
+                        <ul class='dropdown-menu'>
+                            <li><a href='Accounts'>Accounts</a></li>
+                            <li><a href='Categories'>Categories</a></li>
+                        </ul>
+                    </li>
+                    ";
+                    }
+                    @Html.Raw(ViewBag.Temp)
+                </ul>
+            </div>
+            <div id="NavAccountContainer">
+                <ul class="nav navbar-nav navbar-custom">
+                    <li><a>Logged in as: [@Session["Name"]]</a></li>
+                    <li><a href="Login" class="btn btn-link">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid">
+    <div class="col-sm-2 sidenav" style="position:fixed;width:30%;top:75px;left:0">
+        @(Html.BootstrapTable<sp_GetSideBarTopics_Result>(Url.Action("SearchRecord"), TablePaginationOption.server).Apply(TableOption.showRefresh, TableOption.search))
+    </div>
+</div>
+<div class="col-sm-10 text-left" style="left:30%;top:75px;width:70%;overflow:auto" id="content">
+    <div id="view"></div>
+</div>
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog" style="width:1000px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Add KB</h4>
+            </div>
+            <form action="" method="post" enctype="multipart/form-data">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="Title">Title:</label>
+                        <input type="text" class="form-control" id="Title" name="Title" style="width:400px" onblur="checkTextField(this);">
+                        <label for="Category">Category:</label>
+                        <select class="form-control" id="Category" style="width:400px" name="Category">
+                            @Html.Raw(ViewBag.CategoryHTML)
+                        </select>
+                        <label for="fileInput">Attachments:</label>
+                        <input type="file" class="multi btn btn-default" id="fileInput" name="fileInput" />
+                        <label for="descinput">Description:</label>
+                        <textarea class="input-block-level" id="descinput" name="content" rows="18"></textarea>
+                        <script>
+                            $(document).ready(function () {
+                                $('#descinput').summernote({
+                                    height: 200
+                                });;
+                            });
+                            var postForm = function () {
+                                var content = $('textarea[name="content"]').html($('#descinput').code());
+                            }
+                        </script>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-default" id="Add" name="Add" value="Add">Submit</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+        </div>
+        </form>
+    </div>
+</div>
+<div id="myModal2" class="modal fade" role="dialog">
+    <div class="modal-dialog" style="width:1000px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Edit KB</h4>
+            </div>
+            <form action="" method="post" enctype="multipart/form-data">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="Title2">Title:</label>
+                        <input type="text" class="form-control" id="Title2" name="Title2" style="width:400px" onblur="checkTextField(this);">
+                        <input type="hidden" value="" id="Id" name="Id" />
+                        <label for="Category2">Category:</label>
+                        <select class="form-control" id="Category2" style="width:400px" name="Category2">
+                            @Html.Raw(ViewBag.CategoryHTML)
+                        </select>
+                        <label for="fileInput">Attachments:</label>
+                        <div id="attachmentList"></div>
+                        <input type="file" class="multi btn btn-default" id="fileInput2" name="fileInput" />
+                        <label for="descinput2">Description:</label>
+                        <textarea class="input-block-level" id="descinput2" name="content2" rows="18"></textarea>
+                        <script>
+                            $(document).ready(function () {
+                                $('#descinput2').summernote({
+                                    height: 200
+                                });;
+                            });
+                            var postForm = function () {
+                                var content = $('textarea[name="content2"]').html($('#descinput2').code());
+                            }
+                        </script>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-default" id="Edit" name="Edit" value="Edit">Submit</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+        </div>
+        </form>
+    </div>
+</div>
+<div id="addCategories" class="modal fade" role="dialog">
+    <div class="modal-dialog" style="width:800px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Add Category</h4>
+            </div>
+            <form action="" method="post" enctype="multipart/form-data">
+                <div class="modal-body">
+                    <input list="Categories" class="form-control" id="CatName" name="CatName">
+                    <datalist id="Categories">
+                        @Html.Raw(ViewBag.Datalist);
+                    </datalist>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-default" id="Category" name="Category" value="Category">Submit</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="editAccounts" class="modal fade" role="dialog">
+    <div class="modal-dialog" style="width:1100px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Edit Accounts</h4>
+            </div>
+            <form action="" method="post" enctype="multipart/form-data">
+                <div class="modal-body">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Id
+                                    </th>
+                                    <th>
+                                        Username
+                                    </th>
+                                    <th>
+                                        Password
+                                    </th>
+                                    <th>
+                                        Role
+                                    </th>
+                                    <th>
+                                        Email
+                                    </th>
+                                    <th>
+
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @Html.Raw(ViewBag.AccountHTML)
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('table').on('click-row.bs.table', function (event, row) {
+        if (event != null) {
+            $('#view').html('<img style="-webkit-user-select: none; cursor: zoom-in;" src="../spinner.gif" width="697" height="523">');
+            var id = row.Id;
+            $.getJSON('@Url.Action("GetRecord", "Home")',
+                            {
+                                id: id
+                            },
+                            function (data) {
+                                var htmlString = '<ul class="list-group">' +
+                                    '<li class="list-group-item"><h3> ' + data[0].Title + '</h3></li>' +
+                                    '<li class="list-group-item">Author: ' + data[0].Username + '</li>' +
+                                    '<li class="list-group-item">Category: ' + data[0].Name + '</li>' +
+                                    '<li class="list-group-item">Date Created: ' + moment(data[0].DateCreated).format('MMM Do YYYY') + '</li>' +
+                                    '<li class="list-group-item">Date Modified: ' + moment(data[0].DateModified).format('MMM Do YYYY') + '</li>' +
+                                    '<li class="list-group-item">' + data[0].Desc + '</li>'
+                                '</ul>'
+                                var tempString = "";
+                                if (data[0].Path != null) {
+                                    for (var a = 0; a < data.length; a++) {
+                                        htmlString = htmlString + '<a href="/KB/Home/Download?fileDownloadPath=' + data[a].Path + '" class="btn btn-info" role="button">' + data[a].Path.split("/").pop() + '</a>';
+                                        tempString = tempString + '<li class="list-group-item">' + data[a].Path.split("/").pop() + '</li>';
+                                    }
+                                }
+                                $('#attachmentList').html(tempString + '</br>');
+                                $('#List2').html('<input type="file" name="fileInput" id="fileInput" class="btn btn-default" class="btn btn-default" />');
+                                $('#view').html(
+                                    htmlString
+                                    );
+                                $('#descinput2').summernote("code", data[0].Desc);
+                                var TitleEdit = document.getElementById('Title2');
+                                TitleEdit.value = data[0].Title;
+                                var CurrID = document.getElementById('Id');
+                                CurrID.value = id;
+                                var CategoryEdit = document.getElementById('Category2');
+                                for (var i = 0; i < CategoryEdit.options.length; i++) {
+                                    if (CategoryEdit.options[i].value == data[0].CategoryId) {
+                                        CategoryEdit.options[i].selected = true;
+                                        return;
+                                    }
+                                }
+                                if (data[0].Path != null) {
+                                    for (var a = 0; a < data.length; a++) {
+
+                                    }
+                                }
+                            });
+        }
+    });
+</script>

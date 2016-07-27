@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Knowledge Base</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <link href="~/Content/bootstrap-table.min.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-2.2.3.js"></script>
+    <script src="~/Scripts/tableevent.js"></script>
+    <link href="~/Scripts/Summernote/summernote.css" rel="stylesheet" />
+    <script src="~/Scripts/Summernote/summernote.js"></script>
+    <link href="~/Scripts/Summernote/font-awesome.css" rel="stylesheet" />
+    <script src="~/Scripts/moment.js"></script>
+    <script src="~/Scripts/multiple-file-upload/jquery.blockUI.js"></script>
+    <script src="~/Scripts/multiple-file-upload/jquery.form.js"></script>
+    <script src="~/Scripts/multiple-file-upload/jquery.MetaData.js"></script>
+    <script src="~/Scripts/multiple-file-upload/jquery.MultiFile.js"></script>
+    <script src="~/Scripts/multiple-file-upload/jquery.MultiFile.pack.js"></script>
+    <script src="~/Scripts/multiple-file-upload/jquery.validate.js"></script>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    @RenderBody()
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/bootstrap-table/bootstrap-table.min.js"></script>
+    <script>
+    function checkTextField(field) {
+        var Id = $('#' + field.id);
+        if (field.value == '') {
+            Id.css("border-color", "red");
+        }
+        else {
+            Id.css("border-color", "#cccccc");
+        }
+    }
+    function checkTextField2(field, field2) {
+        var Id = $('#' + field.id);
+        if (field.value == '' || (field.value != field2.value)) {
+            Id.css("border-color", "red");
+        }
+        else {
+            Id.css("border-color", "#cccccc");
+        }
+    }
+    </script>
+</body>
+</html>

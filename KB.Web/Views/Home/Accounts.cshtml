@@ -1,0 +1,166 @@
+﻿@{
+    ViewBag.Title = "Admin";
+}
+<nav class="navbar navbar-default" style="position:fixed;width:100%;z-index:20;color:white">
+    <div class="container-fluid navbar-custom">
+        <div id="sideNavContainer">
+            <div class="navbar-header" style="margin-top:-15px">
+                <a class="navbar-brand" href="Index"><img src="~/logo2.png" style="width:75px;height:75px"></a>
+            </div>
+            <ul class="nav navbar-nav navbar-custom" style="font-size:150%">
+                <li>
+                    <a href="Index"><strong>Knowledge Base Repository</strong></a>
+                </li>
+            </ul>
+        </div>
+        <div id="NavMidContainer">
+            <div id="containerMid2">
+                <ul class="nav navbar-nav navbar-custom" style="font-size:120%">
+                    @if (Convert.ToInt32(Session["Role"]) == 19)
+                    {
+                        ViewBag.Temp = @"
+                         <li>
+                        <a href='Index' role='button'>Home</a>
+                    </li>
+                    <li class='dropdown'>
+                        <a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>Admin<span class='caret'></span></a>
+                        <ul class='dropdown-menu'>
+                            <li><a href='Accounts'>Accounts</a></li>
+                            <li><a href='Categories'>Categories</a></li>
+                        </ul>
+                    </li>
+                    ";
+                    }
+                    @Html.Raw(ViewBag.Temp)
+                </ul>
+            </div>
+            <div id="NavAccountContainer">
+                <ul class="nav navbar-nav navbar-custom">
+                    <li><a>Logged in as: [@Session["Name"]]</a></li>
+                    <li><a href="Login" class="btn btn-link">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div id="containerMid" style="width:80%; padding-top:75px">
+    <div width:80%">
+       @(Html.BootstrapTable<sp_GetAccounts_Result>(Url.Action("SearchAccount"), TablePaginationOption.server).Apply(TableOption.showRefresh, TableOption.search).Column("Action").Apply(ColumnOption.formatter, "menuFormatter").Apply(ColumnOption.width, 150).Column("Id").Apply(ColumnOption.visible, false))
+    </div>
+    <button data-toggle='modal' data-target='#Register' type="button" class="btn btn-default">Add Account</button>
+</div>
+
+<div id="editAccount" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Edit Account</h4>
+            </div>
+            <form action="" method="post" enctype="multipart/form-data">
+                <div class="modal-body">
+                    <form action='' method='post' enctype='multipart/form-data'>
+                        <input type="hidden" id="Id" name="Id">
+                        <label for="Username">Username:</label>
+                        <input type="text" class="form-control" id="Username" name="Username" onblur="checkTextField(this);">
+                        <label for="Password">Password:</label>
+                        <input type="text" class="form-control" id="Password" name="Password" onblur="checkTextField(this);">
+                        <label for="Email">Email:</label>
+                        <input type="text" class="form-control" id="Email" name="Email" onblur="checkTextField(this);">
+                        <label for="Role">Role:</label>
+                        <select class='form-control' id='Role' name='Role'>
+                            <option value='18'>User</option>
+                            <option value='19'>Admin</option>
+                        </select>
+                </div>
+                <div class="modal-footer">
+                    <button type='submit' class='btn btn-default' name='EditAcc' id='EditAcc' value='EditAcc'>Confirm</button>
+            </form>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        </div>
+        </form>
+    </div>
+</div>
+</div>
+
+<div id="confirmDelete" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Confirm Delete</h4>
+            </div>
+            <form action="" method="post" enctype="multipart/form-data">
+                <div class="modal-body">
+                    <p>Are you sure you want to delete this account?</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" type="button" class="btn btn-default" data-dismiss="modal" onclick="Delete(currId)">Confirm</a>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="Register" class="modal fade" role="dialog">
+    <div class="modal-dialog" style="width:800px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Register an account</h4>
+            </div>
+            <div class="modal-body">
+                <form action="" method="post" enctype="multipart/form-data">
+                    <label for="usr">Username:</label>
+                    <input type="text" class="form-control" id="usrn" name="username" onblur="checkTextField(this);">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwdn" name="password" onblur="checkTextField(this);">
+                    <label for="pwd2">Confirm Password:</label>
+                    <input type="password" class="form-control" id="pwd2n" name="password2" onblur="checkTextField2(this, pwdn);">
+                    <label for="email">Email:</label>
+                    <input type="text" class="form-control" id="emailn" name="email">
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary" id="Register" name="Register" value="Register">Register</button>
+                <button type="reset" class="btn btn-primary" name="reset">Clear</button>
+                </form>
+            </div>
+</div>
+
+        <script>
+            var currId;
+            var currData;
+            function menuFormatter(value, row, index) {
+                return [
+                    "<button data-toggle='modal' data-target='#editAccount'  type='button' class='btn btn-link' value='" + JSON.stringify(row) + "'  onclick='updateEdit(value)'>Edit</button>",
+                    '<button data-toggle="modal" data-target="#confirmDelete"  type="button" class="btn btn-link" value="' + row["Id"] + '"  onclick="updateId(value)">Delete</button>'
+                ].join(' ').replace(/%7B0%7D/g, row["Id"]);
+            }
+            function updateId(id) {
+                currId = id;
+            }
+            function updateEdit(data) {
+                temp = JSON.parse(data);
+                var HtmlElement = document.getElementById('Username');
+                HtmlElement.value = temp["Username"];
+                var HtmlElement = document.getElementById('Password');
+                HtmlElement.value = temp["Password"];
+                var HtmlElement = document.getElementById('Email');
+                HtmlElement.value = temp["Email"];
+                if (temp["RoleName"] == "User") {
+                    var HtmlElement = document.getElementById('Role');
+                    HtmlElement.value = 18;
+                }
+                else {
+                    var HtmlElement = document.getElementById('Role');
+                    HtmlElement.value = 19;
+                }
+                var HtmlElement = document.getElementById('Id');
+                HtmlElement.value = temp["Id"];
+            }
+            function Delete(id) {
+                window.location = "DeleteAccount/" + id;
+            }
+        </script>

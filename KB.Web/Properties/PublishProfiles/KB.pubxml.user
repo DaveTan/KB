@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\Dave\Desktop\KBCompile</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/BootstrapTable.dll">
+      <publishTime>04/22/2016 13:48:17</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>04/15/2016 10:02:26</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>04/15/2016 10:02:26</publishTime>
+    </File>
+    <File Include="bin/KB.Web.dll">
+      <publishTime>05/05/2016 08:24:47</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>04/22/2016 13:42:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>04/15/2016 09:19:53</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>04/15/2016 09:19:53</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>04/15/2016 09:19:53</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>04/15/2016 09:19:53</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>04/15/2016 09:19:53</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>04/15/2016 09:19:53</publishTime>
+    </File>
+    <File Include="BootstrapTable.dll">
+      <publishTime>04/22/2016 13:48:17</publishTime>
+    </File>
+    <File Include="Content/bootstrap-responsive.css">
+      <publishTime>04/18/2016 07:58:00</publishTime>
+    </File>
+    <File Include="Content/bootstrap-responsive.min.css">
+      <publishTime>04/18/2016 07:58:00</publishTime>
+    </File>
+    <File Include="Content/bootstrap-table.css">
+      <publishTime>04/15/2016 10:48:25</publishTime>
+    </File>
+    <File Include="Content/bootstrap-table.min.css">
+      <publishTime>04/15/2016 10:52:02</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css">
+      <publishTime>04/29/2016 08:52:00</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css.map">
+      <publishTime>04/15/2016 09:20:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css">
+      <publishTime>04/20/2016 09:15:12</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>04/29/2016 08:51:37</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css.map">
+      <publishTime>04/15/2016 09:20:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>04/15/2016 09:20:58</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>05/04/2016 14:50:37</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>04/15/2016 09:20:57</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>04/15/2016 09:20:57</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>04/15/2016 09:20:57</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>04/15/2016 09:20:57</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>04/15/2016 09:19:28</publishTime>
+    </File>
+    <File Include="KB.edmx.diagram">
+      <publishTime>05/04/2016 08:40:03</publishTime>
+    </File>
+    <File Include="KBModel.edmx.diagram">
+      <publishTime>04/20/2016 15:39:59</publishTime>
+    </File>
+    <File Include="logo.png">
+      <publishTime>05/02/2016 11:22:51</publishTime>
+    </File>
+    <File Include="logo2.png">
+      <publishTime>05/04/2016 11:12:59</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>04/22/2016 13:42:30</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-table/bootstrap-table.js">
+      <publishTime>04/15/2016 11:58:02</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-table/bootstrap-table.min.js">
+      <publishTime>04/15/2016 09:20:58</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-table/extensions/editable/bootstrap-table-editable.min.js">
+      <publishTime>04/15/2016 09:20:58</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-table/extensions/export/bootstrap-table-export.min.js">
+      <publishTime>04/15/2016 09:20:58</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-table/extensions/filter/bootstrap-table-filter.min.js">
+      <publishTime>04/15/2016 09:20:58</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-table/extensions/flatJSON/bootstrap-table-flatJSON.min.js">
+      <publishTime>04/15/2016 09:20:58</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-table/locale/bootstrap-table-cs-CZ.min.js">
+      <publishTime>04/15/2016 09:20:58</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-table/locale/bootstrap-table-da-DK.min.js">
+      <publishTime>04/15/2016 09:20:58</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-table/locale/bootstrap-table-de-DE.min.js">
+      <publishTime>04/15/2016 09:20:58</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-table/locale/bootstrap-table-el-GR.min.js">
+      <publishTime>04/15/2016 09:20:58</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-table/locale/bootstrap-table-en-US.min.js">
+      <publishTime>04/15/2016 09:20:58</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-table/locale/bootstrap-table-es-AR.min.js">
+      <publishTime>04/15/2016 09:20:58</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-table/locale/bootstrap-table-es-CR.min.js">
+      <publishTime>04/15/2016 09:20:58</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-table/locale/bootstrap-table-es-NI.min.js">
+      <publishTime>04/15/2016 09:20:58</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-table/locale/bootstrap-table-fr-BE.min.js">
+      <publishTime>04/15/2016 09:20:58</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-table/locale/bootstrap-table-fr-FR.min.js">
+      <publishTime>04/15/2016 09:20:58</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-table/locale/bootstrap-table-hu-HU.min.js">
+      <publishTime>04/15/2016 09:20:58</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-table/locale/bootstrap-table-it-IT.min.js">
+      <publishTime>04/15/2016 09:20:58</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-table/locale/bootstrap-table-ja-JP.min.js">
+      <publishTime>04/15/2016 09:20:58</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-table/locale/bootstrap-table-ko-KR.min.js">
+      <publishTime>04/15/2016 09:20:58</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-table/locale/bootstrap-table-ms-MY.min.js">
+      <publishTime>04/15/2016 09:20:58</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-table/locale/bootstrap-table-nb-NO.min.js">
+      <publishTime>04/15/2016 09:20:58</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-table/locale/bootstrap-table-nl-NL.min.js">
+      <publishTime>04/15/2016 09:20:58</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-table/locale/bootstrap-table-pl-PL.min.js">
+      <publishTime>04/15/2016 09:20:58</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-table/locale/bootstrap-table-pt-BR.min.js">
+      <publishTime>04/15/2016 09:20:58</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-table/locale/bootstrap-table-pt-PT.min.js">
+      <publishTime>04/15/2016 09:20:58</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-table/locale/bootstrap-table-ru-RU.min.js">
+      <publishTime>04/15/2016 09:20:58</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-table/locale/bootstrap-table-sk-SK.min.js">
+      <publishTime>04/15/2016 09:20:58</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-table/locale/bootstrap-table-sv-SE.min.js">
+      <publishTime>04/15/2016 09:20:58</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-table/locale/bootstrap-table-th-TH.min.js">
+      <publishTime>04/15/2016 09:20:58</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-table/locale/bootstrap-table-tr-TR.min.js">
+      <publishTime>04/15/2016 09:20:58</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-table/locale/bootstrap-table-uk-UA.min.js">
+      <publishTime>04/15/2016 09:20:58</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-table/locale/bootstrap-table-ur-PK.min.js">
+      <publishTime>04/15/2016 09:20:58</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-table/locale/bootstrap-table-vi-VN.min.js">
+      <publishTime>04/15/2016 09:20:58</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-table/locale/bootstrap-table-zh-CN.min.js">
+      <publishTime>04/15/2016 09:20:58</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-table/locale/bootstrap-table-zh-TW.min.js">
+      <publishTime>04/15/2016 09:20:58</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>04/15/2016 09:20:57</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>04/15/2016 09:20:57</publishTime>
+    </File>
+    <File Include="Scripts/jquery-2.2.3.js">
+      <publishTime>04/15/2016 09:35:56</publishTime>
+    </File>
+    <File Include="Scripts/jquery-2.2.3.min.js">
+      <publishTime>04/15/2016 09:35:56</publishTime>
+    </File>
+    <File Include="Scripts/jquery-2.2.3.min.map">
+      <publishTime>04/15/2016 09:35:56</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>04/15/2016 09:23:56</publishTime>
+    </File>
+    <File Include="Scripts/moment.js">
+      <publishTime>04/18/2016 07:32:45</publishTime>
+    </File>
+    <File Include="Scripts/multiple-file-upload/documentation.html">
+      <publishTime>04/28/2016 15:21:52</publishTime>
+    </File>
+    <File Include="Scripts/multiple-file-upload/jquery.blockUI.js">
+      <publishTime>04/28/2016 15:21:52</publishTime>
+    </File>
+    <File Include="Scripts/multiple-file-upload/jquery.form.js">
+      <publishTime>04/28/2016 15:21:52</publishTime>
+    </File>
+    <File Include="Scripts/multiple-file-upload/jquery.js">
+      <publishTime>04/28/2016 15:21:52</publishTime>
+    </File>
+    <File Include="Scripts/multiple-file-upload/jquery.MetaData.js">
+      <publishTime>04/28/2016 15:21:52</publishTime>
+    </File>
+    <File Include="Scripts/multiple-file-upload/jquery.MultiFile.js">
+      <publishTime>04/28/2016 15:21:52</publishTime>
+    </File>
+    <File Include="Scripts/multiple-file-upload/jquery.MultiFile.pack.js">
+      <publishTime>04/28/2016 15:21:52</publishTime>
+    </File>
+    <File Include="Scripts/multiple-file-upload/jquery.validate.js">
+      <publishTime>04/28/2016 15:21:52</publishTime>
+    </File>
+    <File Include="Scripts/npm.js">
+      <publishTime>04/15/2016 09:20:57</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/bootstrap.css">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/bootstrap.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/font-awesome.css">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/font/summernote.eot">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/font/summernote.ttf">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/font/summernote.woff">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/jquery.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/lang/summernote-ar-AR.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/lang/summernote-bg-BG.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/lang/summernote-ca-ES.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/lang/summernote-cs-CZ.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/lang/summernote-da-DK.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/lang/summernote-de-DE.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/lang/summernote-es-ES.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/lang/summernote-es-EU.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/lang/summernote-fa-IR.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/lang/summernote-fi-FI.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/lang/summernote-fr-FR.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/lang/summernote-he-IL.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/lang/summernote-hu-HU.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/lang/summernote-id-ID.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/lang/summernote-it-IT.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/lang/summernote-ja-JP.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/lang/summernote-ko-KR.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/lang/summernote-lt-LT.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/lang/summernote-nb-NO.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/lang/summernote-nl-NL.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/lang/summernote-pl-PL.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/lang/summernote-pt-BR.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/lang/summernote-pt-PT.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/lang/summernote-ro-RO.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/lang/summernote-ru-RU.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/lang/summernote-sk-SK.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/lang/summernote-sl-SI.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/lang/summernote-sr-RS-Latin.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/lang/summernote-sr-RS.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/lang/summernote-sv-SE.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/lang/summernote-th-TH.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/lang/summernote-tr-TR.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/lang/summernote-uk-UA.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/lang/summernote-vi-VN.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/lang/summernote-zh-CN.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/lang/summernote-zh-TW.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/plugin/hello/summernote-ext-hello.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/plugin/specialchars/summernote-ext-specialchars.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/summernote.css">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/Summernote/summernote.js">
+      <publishTime>04/20/2016 09:22:10</publishTime>
+    </File>
+    <File Include="Scripts/tableevent.js">
+      <publishTime>04/15/2016 11:50:35</publishTime>
+    </File>
+    <File Include="spinner.gif">
+      <publishTime>05/05/2016 08:15:18</publishTime>
+    </File>
+    <File Include="Views/Accounts/Login.cshtml">
+      <publishTime>04/26/2016 12:35:38</publishTime>
+    </File>
+    <File Include="Views/Home/Accounts.cshtml">
+      <publishTime>05/04/2016 15:45:03</publishTime>
+    </File>
+    <File Include="Views/Home/Categories.cshtml">
+      <publishTime>05/05/2016 08:22:43</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>05/05/2016 08:24:14</publishTime>
+    </File>
+    <File Include="Views/Home/Login.cshtml">
+      <publishTime>05/02/2016 11:28:33</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>05/02/2016 10:23:40</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>05/02/2016 10:44:29</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>04/15/2016 09:23:54</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>05/04/2016 14:17:47</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

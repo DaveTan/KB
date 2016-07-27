@@ -1,0 +1,11 @@
+Writing an Accomplishment Report
+-Dahil po hindi makagawa ng folder sa Files tab, gumawa nalang po kayo ng Doc nyo by clicking the "Create Doc" button tapos sundin ang format sa baba. Isang doc lang po per week. Lagi pong iupdate ang inyong doc.
+FORMAT:
+TITLE: Week 1 Accomplishment Report
+BODY:
+/Date & Day/ (*e.g. April 12, 2016 (Tuesday) 
+/Day Number/ (*e.g. “Day 1”)
+Time In: 
+Time Out:
+Summary:
+Isulat po dito ang mga nagawa nyo at mga natrabaho for the day.

@@ -1,0 +1,148 @@
+﻿@{
+    ViewBag.Title = "Admin";
+}
+<nav class="navbar navbar-default" style="position:fixed;width:100%;z-index:20;color:white">
+    @ViewBag.debug
+    <div class="container-fluid navbar-custom">
+        <div id="sideNavContainer">
+            <div class="navbar-header" style="margin-top:-15px">
+                <a class="navbar-brand" href="Index"><img src="~/logo2.png" style="width:75px;height:75px"></a>
+            </div>
+            <ul class="nav navbar-nav navbar-custom" style="font-size:150%">
+                <li>
+                    <a href="Index"><strong>Knowledge Base Repository</strong></a>
+                </li>
+            </ul>
+        </div>
+        <div id="NavMidContainer">
+            <div id="containerMid2">
+                <ul class="nav navbar-nav navbar-custom" style="font-size:120%">
+                    @if (Convert.ToInt32(Session["Role"]) == 19)
+                    {
+                        ViewBag.Temp = @"
+                         <li>
+                        <a href='Index' role='button'>Home</a>
+                    </li>
+                    <li class='dropdown'>
+                        <a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>Admin<span class='caret'></span></a>
+                        <ul class='dropdown-menu'>
+                            <li><a href='Accounts'>Accounts</a></li>
+                            <li><a href='Categories'>Categories</a></li>
+                        </ul>
+                    </li>
+                    ";
+                    }
+                    @Html.Raw(ViewBag.Temp)
+                </ul>
+            </div>
+            <div id="NavAccountContainer">
+                <ul class="nav navbar-nav navbar-custom">
+                    <li><a>Logged in as: [@Session["Name"]]</a></li>
+                    <li><a href="Login" class="btn btn-link">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div id="containerMid" style="width:60%;padding-top:75px">
+    <div width:60%">
+        @(Html.BootstrapTable<sp_GetCategories_Result>(Url.Action("SearchCategory"), TablePaginationOption.server)
+        .Apply(TableOption.showRefresh, TableOption.search).Column("Action")
+        .Apply(ColumnOption.formatter, "menuFormatter")
+        .Apply(ColumnOption.width, 150).Column("Id")
+        .Apply(ColumnOption.visible, false)
+        )
+    </div>
+    <button data-toggle='modal' data-target='#addCategories' type="button" class="btn btn-default">Add Category</button>
+</div>
+<div id="editAccount" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Edit Category</h4>
+            </div>
+            <form action="" method="post" enctype="multipart/form-data">
+                <div class="modal-body">
+                    <form action='' method='post' enctype='multipart/form-data'>
+                        <input type="hidden" id="Id" name="Id">
+                        <label for="Name">Name:</label>
+                        <input type="text" class="form-control" id="Name" name="Name" onblur="checkTextField(this);">
+                </div>
+                <div class="modal-footer">
+                    <button type='submit' class='btn btn-default' name='EditCategory' id='EditCategory' value='EditAcc'>Confirm</button>
+            </form>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        </div>
+        </form>
+    </div>
+</div>
+</div>
+
+<div id="confirmDelete" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Confirm Delete</h4>
+            </div>
+            <form action="" method="post" enctype="multipart/form-data">
+                <div class="modal-body">
+                    <p>Are you sure you want to delete this category?</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" type="button" class="btn btn-default" data-dismiss="modal" onclick="Delete(currId)">Confirm</a>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="addCategories" class="modal fade" role="dialog">
+    <div class="modal-dialog" style="width:400px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Add Category</h4>
+            </div>
+            <form action="" method="post" enctype="multipart/form-data">
+                <div class="modal-body">
+                    <input list="Categories" class="form-control" id="CatName" name="CatName">
+                    <datalist id="Categories">
+                        @Html.Raw(ViewBag.Datalist);
+                    </datalist>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-default" id="Category" name="Category" value="Category">Submit</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    var currId;
+    var currData;
+    function menuFormatter(value, row, index) {
+        return [
+            "<button data-toggle='modal' data-target='#editAccount'  type='button' class='btn btn-link' value='" + JSON.stringify(row) + "'  onclick='updateEdit(value)'>Edit</button>",
+            '<button data-toggle="modal" data-target="#confirmDelete"  type="button" class="btn btn-link" value="'+row["Id"]+'"  onclick="updateId(value)">Delete</button>'
+        ].join(' ').replace(/%7B0%7D/g, row["Id"]);
+    }
+    function updateId(id) {
+        currId = id;
+    }
+    function updateEdit(data) {
+        temp = JSON.parse(data);
+        var HtmlElement = document.getElementById('Name');
+        HtmlElement.value = temp["Name"];
+        var HtmlElement = document.getElementById('Id');
+        HtmlElement.value = temp["Id"];
+    }
+    function Delete(id) {
+        window.location = "DeleteCategory/" + id;
+    }
+</script>

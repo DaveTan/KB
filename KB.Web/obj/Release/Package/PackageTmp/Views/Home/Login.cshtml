@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+<div id="containerMid">
+    <div style="padding-bottom:30px;padding-left:45px">
+        <img border="0" alt="NMI-Logo" src="~/logo.png" />
+    </div>
+    <div class="panel panel-primary">
+        <div class="panel-heading">Login</div>
+        <div class="panel-body">
+            <form action="" method="post" enctype="multipart/form-data">
+                <label for="usr">Username:</label>
+                <input type="text" class="form-control" id="usr" name="username" onblur="checkTextField(this);">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" name="password" onblur="checkTextField(this);"><br />
+                <div style="float:right">
+                    <button type="submit" class="btn btn-primary" id="Login" name="Login" value="Login">Login</button>
+                    <button type="reset" class="btn btn-primary" name="reset">Clear</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <a href="#" data-toggle="modal" data-target="#Register">Create an account</a>
+</div>
+
+<div id="Register" class="modal fade" role="dialog">
+    <div class="modal-dialog" style="width:800px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Register an account</h4>
+            </div>
+            <div class="modal-body">
+                <form action="" method="post" enctype="multipart/form-data">
+                    <label for="usr">Username:</label>
+                    <input type="text" class="form-control" id="usrn" name="username" onblur="checkTextField(this);">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwdn" name="password" onblur="checkTextField(this);">
+                    <label for="pwd2">Confirm Password:</label>
+                    <input type="password" class="form-control" id="pwd2n" name="password2" onblur="checkTextField2(this, pwdn);">
+                    <label for="email">Email:</label>
+                    <input type="text" class="form-control" id="emailn" name="email">
+            </div>
+            <div class="modal-footer">
+                     <button type="submit" class="btn btn-primary" id="Register" name="Register" value="Register">Register</button>
+                     <button type="reset" class="btn btn-primary" name="reset">Clear</button>
+                </form>
+            </div>
+</div>

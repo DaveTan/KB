@@ -1,0 +1,140 @@
+C:\Users\Dave\Desktop\DEVKB\KB\KB.Web\bin\KB.Web.dll.config
+C:\Users\Dave\Desktop\DEVKB\KB\KB.Web\bin\KB.Web.dll
+C:\Users\Dave\Desktop\DEVKB\KB\KB.Web\bin\KB.Web.pdb
+C:\Users\Dave\Desktop\DEVKB\KB\KB.Web\bin\EntityFramework.dll
+C:\Users\Dave\Desktop\DEVKB\KB\KB.Web\bin\EntityFramework.SqlServer.dll
+C:\Users\Dave\Desktop\DEVKB\KB\KB.Web\bin\System.Web.Helpers.dll
+C:\Users\Dave\Desktop\DEVKB\KB\KB.Web\bin\System.Web.Mvc.dll
+C:\Users\Dave\Desktop\DEVKB\KB\KB.Web\bin\System.Web.Razor.dll
+C:\Users\Dave\Desktop\DEVKB\KB\KB.Web\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Dave\Desktop\DEVKB\KB\KB.Web\bin\System.Web.WebPages.dll
+C:\Users\Dave\Desktop\DEVKB\KB\KB.Web\bin\System.Web.WebPages.Razor.dll
+C:\Users\Dave\Desktop\DEVKB\KB\KB.Web\bin\EntityFramework.xml
+C:\Users\Dave\Desktop\DEVKB\KB\KB.Web\bin\EntityFramework.SqlServer.xml
+C:\Users\Dave\Desktop\DEVKB\KB\KB.Web\bin\System.Web.Helpers.xml
+C:\Users\Dave\Desktop\DEVKB\KB\KB.Web\bin\System.Web.Mvc.xml
+C:\Users\Dave\Desktop\DEVKB\KB\KB.Web\bin\System.Web.Razor.xml
+C:\Users\Dave\Desktop\DEVKB\KB\KB.Web\bin\System.Web.WebPages.xml
+C:\Users\Dave\Desktop\DEVKB\KB\KB.Web\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Dave\Desktop\DEVKB\KB\KB.Web\bin\System.Web.WebPages.Razor.xml
+C:\Users\Dave\Desktop\DEVKB\KB\KB.Web\obj\Debug\KB.Web.csprojResolveAssemblyReference.cache
+C:\Users\Dave\Desktop\DEVKB\KB\KB.Web\obj\Debug\KB.Web.dll
+C:\Users\Dave\Desktop\DEVKB\KB\KB.Web\obj\Debug\KB.Web.pdb
+C:\Users\Dave\Desktop\DEVKB\KB\KB.Web\bin\NetSpell.SpellChecker.dll
+C:\Users\Dave\Desktop\DEVKB\KB\KB.Web\bin\RichTextEditor.dll
+C:\Users\Dave\Desktop\DEVKB\KB2\KB.Web\bin\KB.Web.dll.config
+C:\Users\Dave\Desktop\DEVKB\KB2\KB.Web\bin\KB.Web.dll
+C:\Users\Dave\Desktop\DEVKB\KB2\KB.Web\bin\KB.Web.pdb
+C:\Users\Dave\Desktop\DEVKB\KB2\KB.Web\bin\EntityFramework.dll
+C:\Users\Dave\Desktop\DEVKB\KB2\KB.Web\bin\EntityFramework.SqlServer.dll
+C:\Users\Dave\Desktop\DEVKB\KB2\KB.Web\bin\NetSpell.SpellChecker.dll
+C:\Users\Dave\Desktop\DEVKB\KB2\KB.Web\bin\RichTextEditor.dll
+C:\Users\Dave\Desktop\DEVKB\KB2\KB.Web\bin\System.Web.Helpers.dll
+C:\Users\Dave\Desktop\DEVKB\KB2\KB.Web\bin\System.Web.Mvc.dll
+C:\Users\Dave\Desktop\DEVKB\KB2\KB.Web\bin\System.Web.Razor.dll
+C:\Users\Dave\Desktop\DEVKB\KB2\KB.Web\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Dave\Desktop\DEVKB\KB2\KB.Web\bin\System.Web.WebPages.dll
+C:\Users\Dave\Desktop\DEVKB\KB2\KB.Web\bin\System.Web.WebPages.Razor.dll
+C:\Users\Dave\Desktop\DEVKB\KB2\KB.Web\bin\EntityFramework.xml
+C:\Users\Dave\Desktop\DEVKB\KB2\KB.Web\bin\EntityFramework.SqlServer.xml
+C:\Users\Dave\Desktop\DEVKB\KB2\KB.Web\bin\System.Web.Helpers.xml
+C:\Users\Dave\Desktop\DEVKB\KB2\KB.Web\bin\System.Web.Mvc.xml
+C:\Users\Dave\Desktop\DEVKB\KB2\KB.Web\bin\System.Web.Razor.xml
+C:\Users\Dave\Desktop\DEVKB\KB2\KB.Web\bin\System.Web.WebPages.xml
+C:\Users\Dave\Desktop\DEVKB\KB2\KB.Web\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Dave\Desktop\DEVKB\KB2\KB.Web\bin\System.Web.WebPages.Razor.xml
+C:\Users\Dave\Desktop\DEVKB\KB2\KB.Web\obj\Debug\KB.Web.csprojResolveAssemblyReference.cache
+C:\Users\Dave\Desktop\DEVKB\KB2\KB.Web\obj\Debug\KB.Web.dll
+C:\Users\Dave\Desktop\DEVKB\KB2\KB.Web\obj\Debug\KB.Web.pdb
+C:\Users\Dave\Documents\OJT\KB2 - Copy\KB.Web\bin\KB.Web.dll.config
+C:\Users\Dave\Documents\OJT\KB2 - Copy\KB.Web\bin\KB.Web.dll
+C:\Users\Dave\Documents\OJT\KB2 - Copy\KB.Web\bin\KB.Web.pdb
+C:\Users\Dave\Documents\OJT\KB2 - Copy\KB.Web\bin\EntityFramework.dll
+C:\Users\Dave\Documents\OJT\KB2 - Copy\KB.Web\bin\EntityFramework.SqlServer.dll
+C:\Users\Dave\Documents\OJT\KB2 - Copy\KB.Web\bin\System.Web.Helpers.dll
+C:\Users\Dave\Documents\OJT\KB2 - Copy\KB.Web\bin\System.Web.Mvc.dll
+C:\Users\Dave\Documents\OJT\KB2 - Copy\KB.Web\bin\System.Web.Razor.dll
+C:\Users\Dave\Documents\OJT\KB2 - Copy\KB.Web\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Dave\Documents\OJT\KB2 - Copy\KB.Web\bin\System.Web.WebPages.dll
+C:\Users\Dave\Documents\OJT\KB2 - Copy\KB.Web\bin\System.Web.WebPages.Razor.dll
+C:\Users\Dave\Documents\OJT\KB2 - Copy\KB.Web\bin\EntityFramework.xml
+C:\Users\Dave\Documents\OJT\KB2 - Copy\KB.Web\bin\EntityFramework.SqlServer.xml
+C:\Users\Dave\Documents\OJT\KB2 - Copy\KB.Web\bin\System.Web.Helpers.xml
+C:\Users\Dave\Documents\OJT\KB2 - Copy\KB.Web\bin\System.Web.Mvc.xml
+C:\Users\Dave\Documents\OJT\KB2 - Copy\KB.Web\bin\System.Web.Razor.xml
+C:\Users\Dave\Documents\OJT\KB2 - Copy\KB.Web\bin\System.Web.WebPages.xml
+C:\Users\Dave\Documents\OJT\KB2 - Copy\KB.Web\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Dave\Documents\OJT\KB2 - Copy\KB.Web\bin\System.Web.WebPages.Razor.xml
+C:\Users\Dave\Documents\OJT\KB2 - Copy\KB.Web\obj\Debug\KB.Web.csprojResolveAssemblyReference.cache
+C:\Users\Dave\Documents\OJT\KB2 - Copy\KB.Web\obj\Debug\KB.Web.dll
+C:\Users\Dave\Documents\OJT\KB2 - Copy\KB.Web\obj\Debug\KB.Web.pdb
+C:\Users\Dave\Documents\OJT\KB2 - Copy - Copy (3)\KB.Web\bin\KB.Web.dll.config
+C:\Users\Dave\Documents\OJT\KB2 - Copy - Copy (3)\KB.Web\bin\KB.Web.dll
+C:\Users\Dave\Documents\OJT\KB2 - Copy - Copy (3)\KB.Web\bin\KB.Web.pdb
+C:\Users\Dave\Documents\OJT\KB2 - Copy - Copy (3)\KB.Web\bin\EntityFramework.dll
+C:\Users\Dave\Documents\OJT\KB2 - Copy - Copy (3)\KB.Web\bin\EntityFramework.SqlServer.dll
+C:\Users\Dave\Documents\OJT\KB2 - Copy - Copy (3)\KB.Web\bin\System.Web.Helpers.dll
+C:\Users\Dave\Documents\OJT\KB2 - Copy - Copy (3)\KB.Web\bin\System.Web.Mvc.dll
+C:\Users\Dave\Documents\OJT\KB2 - Copy - Copy (3)\KB.Web\bin\System.Web.Razor.dll
+C:\Users\Dave\Documents\OJT\KB2 - Copy - Copy (3)\KB.Web\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Dave\Documents\OJT\KB2 - Copy - Copy (3)\KB.Web\bin\System.Web.WebPages.dll
+C:\Users\Dave\Documents\OJT\KB2 - Copy - Copy (3)\KB.Web\bin\System.Web.WebPages.Razor.dll
+C:\Users\Dave\Documents\OJT\KB2 - Copy - Copy (3)\KB.Web\bin\EntityFramework.xml
+C:\Users\Dave\Documents\OJT\KB2 - Copy - Copy (3)\KB.Web\bin\EntityFramework.SqlServer.xml
+C:\Users\Dave\Documents\OJT\KB2 - Copy - Copy (3)\KB.Web\bin\System.Web.Helpers.xml
+C:\Users\Dave\Documents\OJT\KB2 - Copy - Copy (3)\KB.Web\bin\System.Web.Mvc.xml
+C:\Users\Dave\Documents\OJT\KB2 - Copy - Copy (3)\KB.Web\bin\System.Web.Razor.xml
+C:\Users\Dave\Documents\OJT\KB2 - Copy - Copy (3)\KB.Web\bin\System.Web.WebPages.xml
+C:\Users\Dave\Documents\OJT\KB2 - Copy - Copy (3)\KB.Web\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Dave\Documents\OJT\KB2 - Copy - Copy (3)\KB.Web\bin\System.Web.WebPages.Razor.xml
+C:\Users\Dave\Documents\OJT\KB2 - Copy - Copy (3)\KB.Web\obj\Debug\KB.Web.csprojResolveAssemblyReference.cache
+C:\Users\Dave\Documents\OJT\KB2 - Copy - Copy (3)\KB.Web\obj\Debug\KB.Web.dll
+C:\Users\Dave\Documents\OJT\KB2 - Copy - Copy (3)\KB.Web\obj\Debug\KB.Web.pdb
+C:\Users\Dave\Documents\OJT\KB\KB.Web\obj\Debug\KB.Web.csprojResolveAssemblyReference.cache
+C:\Users\Dave\Documents\OJT\KB\KB.Web\obj\Debug\KB.Web.dll
+C:\Users\Dave\Documents\OJT\KB\KB.Web\bin\KB.Web.dll.config
+C:\Users\Dave\Documents\OJT\KB\KB.Web\bin\KB.Web.dll
+C:\Users\Dave\Documents\OJT\KB\KB.Web\bin\KB.Web.pdb
+C:\Users\Dave\Documents\OJT\KB\KB.Web\bin\EntityFramework.dll
+C:\Users\Dave\Documents\OJT\KB\KB.Web\bin\EntityFramework.SqlServer.dll
+C:\Users\Dave\Documents\OJT\KB\KB.Web\bin\System.Web.Helpers.dll
+C:\Users\Dave\Documents\OJT\KB\KB.Web\bin\System.Web.Mvc.dll
+C:\Users\Dave\Documents\OJT\KB\KB.Web\bin\System.Web.Razor.dll
+C:\Users\Dave\Documents\OJT\KB\KB.Web\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Dave\Documents\OJT\KB\KB.Web\bin\System.Web.WebPages.dll
+C:\Users\Dave\Documents\OJT\KB\KB.Web\bin\System.Web.WebPages.Razor.dll
+C:\Users\Dave\Documents\OJT\KB\KB.Web\bin\EntityFramework.xml
+C:\Users\Dave\Documents\OJT\KB\KB.Web\bin\EntityFramework.SqlServer.xml
+C:\Users\Dave\Documents\OJT\KB\KB.Web\bin\System.Web.Helpers.xml
+C:\Users\Dave\Documents\OJT\KB\KB.Web\bin\System.Web.Mvc.xml
+C:\Users\Dave\Documents\OJT\KB\KB.Web\bin\System.Web.Razor.xml
+C:\Users\Dave\Documents\OJT\KB\KB.Web\bin\System.Web.WebPages.xml
+C:\Users\Dave\Documents\OJT\KB\KB.Web\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Dave\Documents\OJT\KB\KB.Web\bin\System.Web.WebPages.Razor.xml
+C:\Users\Dave\Documents\OJT\KB\KB.Web\obj\Debug\KB.Web.pdb
+C:\Users\Dave\Documents\OJT\KB\KB.Web\bin\BootstrapTable.dll
+C:\Users\Dave\Documents\OJT\KB\KB.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Dave\Documents\OJT\Backup\New folder\KB\KB.Web\bin\BootstrapTable.dll
+C:\Users\Dave\Documents\OJT\Backup\New folder\KB\KB.Web\bin\KB.Web.dll.config
+C:\Users\Dave\Documents\OJT\Backup\New folder\KB\KB.Web\bin\KB.Web.dll
+C:\Users\Dave\Documents\OJT\Backup\New folder\KB\KB.Web\bin\KB.Web.pdb
+C:\Users\Dave\Documents\OJT\Backup\New folder\KB\KB.Web\bin\EntityFramework.dll
+C:\Users\Dave\Documents\OJT\Backup\New folder\KB\KB.Web\bin\EntityFramework.SqlServer.dll
+C:\Users\Dave\Documents\OJT\Backup\New folder\KB\KB.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Dave\Documents\OJT\Backup\New folder\KB\KB.Web\bin\System.Web.Helpers.dll
+C:\Users\Dave\Documents\OJT\Backup\New folder\KB\KB.Web\bin\System.Web.Mvc.dll
+C:\Users\Dave\Documents\OJT\Backup\New folder\KB\KB.Web\bin\System.Web.Razor.dll
+C:\Users\Dave\Documents\OJT\Backup\New folder\KB\KB.Web\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Dave\Documents\OJT\Backup\New folder\KB\KB.Web\bin\System.Web.WebPages.dll
+C:\Users\Dave\Documents\OJT\Backup\New folder\KB\KB.Web\bin\System.Web.WebPages.Razor.dll
+C:\Users\Dave\Documents\OJT\Backup\New folder\KB\KB.Web\bin\EntityFramework.xml
+C:\Users\Dave\Documents\OJT\Backup\New folder\KB\KB.Web\bin\EntityFramework.SqlServer.xml
+C:\Users\Dave\Documents\OJT\Backup\New folder\KB\KB.Web\bin\System.Web.Helpers.xml
+C:\Users\Dave\Documents\OJT\Backup\New folder\KB\KB.Web\bin\System.Web.Mvc.xml
+C:\Users\Dave\Documents\OJT\Backup\New folder\KB\KB.Web\bin\System.Web.Razor.xml
+C:\Users\Dave\Documents\OJT\Backup\New folder\KB\KB.Web\bin\System.Web.WebPages.xml
+C:\Users\Dave\Documents\OJT\Backup\New folder\KB\KB.Web\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Dave\Documents\OJT\Backup\New folder\KB\KB.Web\bin\System.Web.WebPages.Razor.xml
+C:\Users\Dave\Documents\OJT\Backup\New folder\KB\KB.Web\obj\Debug\KB.Web.csprojResolveAssemblyReference.cache
+C:\Users\Dave\Documents\OJT\Backup\New folder\KB\KB.Web\obj\Debug\KB.Web.dll
+C:\Users\Dave\Documents\OJT\Backup\New folder\KB\KB.Web\obj\Debug\KB.Web.pdb
